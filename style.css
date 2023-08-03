@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  color: black;
+}
+
+.image::before {
+  content: "";
+  position: fixed;
+  background-image: url(img/pexels-pixabay-53621.jpg);
+  background-size: 100% 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -3;
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+.headerBar {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  transition: 0.15s;
+  text-align: center;
+  background-color: #752f2f;
+}
+
+.title {
+  margin: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.topbar {
+  margin-bottom: 10px;
+}
+
+.currency {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.balance {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* height: 100vh; */
+  margin: auto;
+  margin-top: 75px;
+  align-items: center;
+  /* justify-content: center; */
+
+}
+
+.content {
+  width: 700px;
+  /* margin: 0 auto; */
+  padding: 2%;
+  /* padding-left: 6%; */
+}
+
+.secondTitle {
+  background-color: #752f2f;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.form {
+  padding: 5px;
+  padding-top: 20px;
+  padding-left: 10%;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.formLine {
+  display: inline-flex;
+  padding: 5px 0px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-right: 100px;
+}
+
+input,
+select {
+  width: 130px;
+  margin-left: 10px;
+}
+
+/* table style */
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: #752f2f;
+  color: white;
+  line-height: 30px;
+}
+
+tbody {
+  background-color: bisque;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Button */
+
+button {
+  width: 200px;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 20px;
+  background-color: #752f2f;
+  border-radius: 5px;
+  margin: 14px 25%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: 0 0 0 2px grey;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#footer{
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  transition: 0.15s;
+  text-align: center;
+  background-color: #752f2f;
+}
+.container{
+  margin: 20px;
+  color: white;
+}
